@@ -20,8 +20,8 @@ export function LoginPage() {
 
   const handleRequestOTP = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email.endsWith('.edu')) {
-      toast.error('Please use a valid student email (.edu)');
+    if (!email.endsWith('@usiu.ac.ke')) {
+      toast.error('Please use a valid student email (@usiu.ac.ke)');
       return;
     }
 
